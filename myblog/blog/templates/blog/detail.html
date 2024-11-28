@@ -1,0 +1,11 @@
+{% extends 'blog/layout.html' %}
+
+{% block title %} Блог {{ posts.title }} {% endblock %}
+
+{% block content%}
+<div class = "wrapper">
+    <h1> {{ posts.title }} </h1>
+        <p>{{ posts.content }}</p>
+        <p>Дата публикации: {{ posts.date_posted }}</p>
+</div>
+{% endblock %}
